@@ -1,13 +1,21 @@
-<table width="50%" border="1" >
+<style type="text/css">
+body {width:1000px; margin:5px auto;}
+#content {background-color:#CCEEFF; margin:10px; padding:5px; border:2px solid blue; font-size: 14pt; color:#030; line-height:28px;position:relative;
+    top:5%;}
+a {color:purple}
+</style>
+</head>
+<body  background="icon/10.jpg">
+<div id="content">
+<table width="100%" border="1" >
         </br></br>
-		<p> 材料表 </p> 
         <tr>
-        <td width="10%">麵包名稱</td>
-        <td width="8%">糖(份)</td>
-        <td width="8%">麵粉(份)</td>
-        <td width="8%">牛奶(份)</td>
-        <td width="8%">烘焙時間</td>
-        <td width="8%">賣取金錢</td>
+        <td width="17%">麵包名稱</td>
+        <td width="16%">糖(份)</td>
+        <td width="16%">麵粉(份)</td>
+        <td width="16%">牛奶(份)</td>
+        <td width="16%">烘焙時間</td>
+        <td width="16%">賣取金錢</td>
         
         </tr>
 <?php

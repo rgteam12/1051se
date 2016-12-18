@@ -1,4 +1,12 @@
-﻿<table border='5' width='1000'>
+﻿<style type="text/css">
+body {width:1050px; margin:10px auto;}
+#content {background-color:#CCEEFF; margin:10px; padding:10px; border:2px solid blue; font-size: 14pt; color:#030; line-height:28px}
+a {color:purple}
+</style>
+</head>
+<body  background="icon/2.jpg">
+<div id="content">
+<table border='5' width='1000'>
 <tr>
 <td>項目</td>
 <td>價錢</td>
@@ -60,4 +68,6 @@ $d=rand(1000,2000);
 </tr>
 </form>
 -->
+</div>
+</body>
 </table>

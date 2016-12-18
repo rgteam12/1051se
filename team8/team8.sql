@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- 主機: 127.0.0.1
--- 產生時間： 2016-12-18 04:13:04
--- 伺服器版本: 10.1.19-MariaDB
--- PHP 版本： 5.6.28
+-- 產生時間： 2016-12-18 22:03:31
+-- 伺服器版本: 10.1.13-MariaDB
+-- PHP 版本： 7.0.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -41,9 +41,9 @@ CREATE TABLE `food` (
 --
 
 INSERT INTO `food` (`id`, `fname`, `sugar`, `milk`, `flour`, `time`, `price`) VALUES
-(1, 'bread', 23, 21, 20, 20, 55),
-(2, 'dd', 15, 26, 22, 40, 63),
-(3, 'aa', 47, 23, 30, 35, 40);
+(1, 'bread', 4, 10, 8, 20, 88),
+(2, 'toast', 8, 5, 3, 30, 84),
+(3, 'cookie', 3, 11, 3, 12, 75);
 
 -- --------------------------------------------------------
 
@@ -53,24 +53,20 @@ INSERT INTO `food` (`id`, `fname`, `sugar`, `milk`, `flour`, `time`, `price`) VA
 
 CREATE TABLE `oven` (
   `ovenid` int(11) NOT NULL,
-  `uid` int(11) DEFAULT '1',
   `uoven` int(11) NOT NULL,
-  `fname` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `fname` varchar(20) NOT NULL,
   `fcount` int(11) NOT NULL,
-  `starttime` time NOT NULL,
   `finishtime` time NOT NULL,
-  `status` int(11) NOT NULL DEFAULT '0'
+  `status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- 資料表的匯出資料 `oven`
 --
 
-INSERT INTO `oven` (`ovenid`, `uid`, `uoven`, `fname`, `fcount`, `starttime`, `finishtime`, `status`) VALUES
-(1, 1, 1, '', 0, '00:00:00', '00:00:00', 0),
-(2, 1, 2, '', 0, '00:00:00', '00:00:00', 0),
-(56, 1, 3, '', 0, '00:00:00', '00:00:00', 0),
-(57, 1, 4, '', 0, '00:00:00', '00:00:00', 0);
+INSERT INTO `oven` (`ovenid`, `uoven`, `fname`, `fcount`, `finishtime`, `status`) VALUES
+(1, 1, 'bread', 3, '10:04:12', 1),
+(2, 2, 'toast', 10, '10:08:19', 1);
 
 -- --------------------------------------------------------
 
@@ -114,7 +110,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `sugar`, `flour`, `milk`, `money`, `oven`) VALUES
-(1, 554, 238, 192, 489675, 4);
+(1, 908, 946, 920, 96832, 2);
 
 --
 -- 已匯出資料表的索引
@@ -145,7 +141,7 @@ ALTER TABLE `food`
 -- 使用資料表 AUTO_INCREMENT `oven`
 --
 ALTER TABLE `oven`
-  MODIFY `ovenid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `ovenid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

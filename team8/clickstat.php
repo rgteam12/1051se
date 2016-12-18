@@ -1,26 +1,30 @@
 <style type="text/css">
 #buttonone{
+	width:40%;
+	height:40%;
+	float:left;
+	position:relative;
+    top:20%;
+}
+#buttontwo{
 	width:10%;
 	height:10%;
 	float:left;
-	margin:0 auto;
-	
-}
-
-#buttontwo{
-	width:%;
-	height:10%;
-	float:right;
-	margin:100 auto;
+	position:relative;
+    top:-10%;
+    left:105%;
 }
 
 #buttonthree{
-    width:%;
+    width:10%;
 	height:10%;
-	float:right;
-	margin:100 auto;
+	float:left;
+	position:relative;
+    top:-1100%;
+    left:700%;
 }
 </style>
+    <body  background="icon/4.jpg">
     <div id="buttonone">
     <a href="bread1.php">bread</a> </br>  
                
@@ -44,7 +48,7 @@
                
     <a href="bread3.php" 
 	<input type="submit" id="toast" >
-	<img src="icon/cookie.png" style="height:10000%">
+	<img src="icon/cookie.jpg" style="height:10000%">
 	</a>
 
 

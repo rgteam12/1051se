@@ -9,7 +9,7 @@ $ovenid=$_POST['ovenid'];
             $fname = $rs['fname'];
 			$count = $rs['fcount'];
         }
-$sql="update oven set fname='',fcount='0',starttime='00:00:00',finishtime='00:00:00',status='0' where ovenid=$ovenid ;";
+$sql="update oven set fname='',fcount='0',finishtime='00:00:00',status='0' where ovenid=$ovenid ;";
 mysqli_query($conn,$sql)or die ("ERROE");
 $sql="select * from food where fname='$fname';";
 $result=(mysqli_query($conn,$sql));

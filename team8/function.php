@@ -21,10 +21,10 @@ function flour($num,$c){
 function oven($num,$d){   
     global $conn;
     $sql="select * from oven ";
-$result=mysqli_query($conn,$sql);
-while($row=mysqli_fetch_array($result)){
-	$uoven=$row['uoven'];
-}
+    $result=mysqli_query($conn,$sql);
+    while($row=mysqli_fetch_array($result)){
+	    $uoven=$row['uoven'];
+    }
     $uoven=$uoven+1;
     $price = $num*$d;
     $sql="update user set oven=oven+$num, money=money-$price where id='1';";
@@ -32,4 +32,10 @@ while($row=mysqli_fetch_array($result)){
     $sql="insert into oven (uoven) value('$uoven');";
     return mysqli_query($conn,$sql);
 }
+/*function checkfood($num,$c){
+    global $conn;
+    
+    return mysqli_query($conn,$sql);
+}
+*/
 ?>

@@ -67,7 +67,9 @@ switch($act) {
                 echo "<script>alert('Failed!');window.location='shop.php';</script>";
         }
         break;
-       
+/*    case "makebread":
+           
+*/           
 	default:
 }
 ?>

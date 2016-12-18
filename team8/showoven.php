@@ -1,7 +1,4 @@
-﻿
-
-
-<html>
+﻿<html>
 </html>
 <head>
 

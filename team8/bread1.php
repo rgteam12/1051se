@@ -1,14 +1,23 @@
-<table width="50%" border="1" >
+<style type="text/css">
+body {width:1000px; margin:5px auto;}
+#content {background-color:#CCEEFF; margin:10px; padding:5px; border:2px solid blue; font-size: 14pt; color:#030; line-height:28px;position:relative;
+    top:5%;}
+a {color:purple}
+</style>
+</head>
+<body  background="icon/5.jpg">
+<div id="content">
+<table width="100%" border="1" >
         </br></br>
 
         <tr>
-        <td width="10%">麵包名稱</td>
-        <td width="8%">糖</td>
-        <td width="8%">麵粉</td>
-        <td width="8%">牛奶</td>
-        <td width="8%">烘焙時間</td>
-        <td width="8%">賣取金錢</td>
-        <td width="8%">數量</td>
+        <td width="15%">麵包名稱</td>
+        <td width="14%">糖</td>
+        <td width="14%">麵粉</td>
+        <td width="14%">牛奶</td>
+        <td width="14%">烘焙時間</td>
+        <td width="14%">賣取金錢</td>
+        <td width="14%">數量</td>
         
         
         </tr>

@@ -14,7 +14,7 @@ date_default_timezone_set('Asia/Taipei');
 	//印出值:玩家,製作食物ID,食物名稱,時間,食物材料包數,數量,總需要時間
 	//echo "玩家:".$user."食物:".$fid."時間:".$ftime."數量:".$count."總需時間:".$sumtime."<br/>";
 	//$ovencount:看玩家有幾個空置的烤爐
-	$sql="select count(ovenid) as a from oven where status='0';";
+	$sql="select count(uoven) as a from oven where status='0';";
 	$result=mysqli_query($conn,$sql);
 	while($row=mysqli_fetch_array($result)){
 		$ovencount=$row['a'];
@@ -34,12 +34,12 @@ date_default_timezone_set('Asia/Taipei');
 	$sql="select * from oven where status='0';";
 	$result=mysqli_query($conn,$sql);
 	while($row=mysqli_fetch_array($result)){
-		$oven=$row['ovenid'];
+		$oven=$row['uoven'];
 		break;
 	}
 	
 	//更新$oven的資料,foodname,starttime,finishtime,status
-	$sql="update oven set fname='$fname',fcount='$count',starttime='$starttime',finishtime='$finishtime' ,status='1' where ovenid='$oven';";
+	$sql="update oven set fname='$fname',fcount='$count',finishtime='$finishtime' ,status='1' where uoven='$oven';";
 	mysqli_query($conn,$sql)or die("ERROR");
 	//扣玩家的材料包
 
