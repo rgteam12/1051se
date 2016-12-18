@@ -5,9 +5,9 @@
 <td>數量</td>
 </tr>
 <?php
-$a=rand(10,20);
-$b=rand(10,20);
-$c=rand(15,30);
+$a=rand(5,10);
+$b=rand(5,10);
+$c=rand(10,20);
 $d=rand(1000,2000);
 ?>
 <form method='post' action='controller.php'>

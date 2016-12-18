@@ -38,7 +38,7 @@ function clickfunction(ovenid,uoven){
 		$("#div010").fadeIn("slow");
 		DIV="div011";
 		$.ajax({
-		url: 'ovendone.php',
+		url: 'ovenfindone.php',
 		datatype:'html',
 		type:'POST',
 		data: { ovenid: ovenid},
