@@ -70,9 +70,9 @@ function clickfunction(ovenid,uoven){
 </script>
 <style>
 #div010{
-	width:350px;
+	width:400px;
 	height:280px;
-	background-color: #ffd633;
+	background-color: #EEEE00;
 	position:absolute;
 	top:15%;left:35%;
 	display:none;

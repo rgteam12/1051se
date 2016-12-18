@@ -27,7 +27,7 @@ while($row=mysqli_fetch_array($result))
 $sql="update user set money='$newmoney' where id = '1';";
 mysqli_query($conn,$sql)or die ("ERROE");
 mysqli_query($conn,$sql)or die ("ERROR3");
-echo "<script>alert('成功賣出!恭喜你!');location.href = 'gamepage.php';</script>";
+echo "<script>alert('成功賣出!恭喜你獲得".$fmoney*$count."元!');location.href = 'gamepage.php';</script>";
 
 
 ?>
