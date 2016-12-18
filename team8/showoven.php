@@ -32,8 +32,8 @@ function clickfunction(ovenid,uoven){
 		document.getElementById(uoven.id).disabled=true;
 	}
 	else if(v=="完成囉"){
-		$("#div010").fadeIn("slow");
-		DIV="div011";
+		//$("#div010").fadeIn("slow");
+		//DIV="div011";
 		$.ajax({
 		url: 'ovenfindone.php',
 		datatype:'html',
