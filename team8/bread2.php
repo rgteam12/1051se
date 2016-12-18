@@ -12,9 +12,9 @@ a {color:purple}
 
         <tr>
         <td width="15%">麵包名稱</td>
+        <td width="14%">牛奶</td>
         <td width="14%">糖</td>
         <td width="14%">麵粉</td>
-        <td width="14%">牛奶</td>
         <td width="14%">烘焙時間</td>
         <td width="14%">賣取金錢</td>
         <td width="14%">數量</td>
@@ -35,8 +35,8 @@ $text="";
         $price=$rs['price'];
         
     echo"<tr><td>" , $rs['fname'],
-        "</td><td>", $rs['sugar'], 
         "</td><td>", $rs['milk'],
+        "</td><td>", $rs['sugar'], 
         "</td><td>", $rs['flour'],
         "</td><td>", $rs['time'],
         "</td><td>", $rs['price'],
@@ -44,14 +44,14 @@ $text="";
     }
 ?>
 <form method='post' action='stated.php'>
-    <input type='text'  name='id' value='<?php echo $id ;?>' hidden/>
-    <input type='text'  name='fname' value='<?php echo $fname ;?>' hidden/>
-    <input type='text'  name='sugar' value='<?php echo $sugar ;?>' hidden/>
-    <input type='text'  name='milk' value='<?php echo $milk ;?>' hidden/>
-    <input type='text'  name='flour' value='<?php echo $flour ;?>' hidden/>
-    <input type='text'  name='time' value='<?php echo $time ;?>' hidden/>
-    <input type='text'  name='price' value='<?php echo $price ;?>' hidden/>
-    <select class='btn btn-success' name='count' id='count' onchange='checkfood()'>
+<input type='text'  name='id' value='<?php echo $id ;?>' hidden/>
+<input type='text'  name='fname' value='<?php echo $fname ;?>' hidden/>
+<input type='text'  name='milk' value='<?php echo $milk ;?>' hidden/>
+<input type='text'  name='sugar' value='<?php echo $sugar ;?>' hidden/>
+<input type='text'  name='flour' value='<?php echo $flour ;?>' hidden/>
+<input type='text'  name='time' value='<?php echo $time ;?>' hidden/>
+<input type='text'  name='price' value='<?php echo $price ;?>' hidden/>
+<select class='btn btn-success' name='count' id='count' onchange='checkfood()'>
         <?php
             for($i=0;$i<=20;$i++){
             echo "<option value=".$i.">".$i."</option>";

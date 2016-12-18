@@ -11,9 +11,9 @@ a {color:purple}
         </br></br>
         <tr>
         <td width="17%">麵包名稱</td>
+        <td width="16%">牛奶(份)</td>
         <td width="16%">糖(份)</td>
         <td width="16%">麵粉(份)</td>
-        <td width="16%">牛奶(份)</td>
         <td width="16%">烘焙時間</td>
         <td width="16%">賣取金錢</td>
         
@@ -37,8 +37,8 @@ $results=mysqli_query($conn,$sqll);
     while (	$rs=mysqli_fetch_array($results)) {
 
     echo"<tr><td>" , $rs['fname'],
-        "</td><td>", $rs['sugar'], 
         "</td><td>", $rs['milk'],
+        "</td><td>", $rs['sugar'], 
         "</td><td>", $rs['flour'],
         "</td><td>", $rs['time'],
         "</td><td>", $rs['price'];            
