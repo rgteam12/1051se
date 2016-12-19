@@ -1,7 +1,7 @@
 <style type="text/css">
 body {width:1000px; margin:5px auto;}
-#content {background-color:#CCEEFF; margin:10px; padding:5px; border:2px solid blue; font-size: 14pt; color:#030; line-height:28px;position:relative;
-    top:5%;}
+#content {background-color:#CCEEFF; margin:10px; padding:5px; border:2px solid blue; font-size: 14pt; color:#030; line-height:2px;position:relative;
+    top:30%;}
 a {color:purple}
 </style>
 </head>
@@ -11,13 +11,13 @@ a {color:purple}
         </br></br>
 
         <tr>
-        <td width="15%">麵包名稱</td>
-        <td width="14%">牛奶</td>
-        <td width="14%">糖</td>
-        <td width="14%">麵粉</td>
-        <td width="14%">烘焙時間</td>
-        <td width="14%">賣取金錢</td>
-        <td width="14%">數量</td>
+        <td width="15%"><img src='icon/toast.png' style="height:12%"></td>
+        <td width="14%"><img src='icon/milk.png' style="height:50%"></td>
+        <td width="14%"><img src='icon/sugar.png' style="height:50%"></td>
+        <td width="14%"><img src='icon/flour.png' style="height:80%"></td>
+        <td width="14%"><img src='icon/clock.png' style="height:3%"></td>
+        <td width="14%"><img src='icon/money.png' style="height:15%"></td>
+        <td width="14%"><img src='icon/n.png' style="height:8%"></td>
         
         
         </tr>
@@ -35,11 +35,11 @@ $text="";
         $price=$rs['price'];
         
     echo"<tr><td>" , $rs['fname'],
-        "</td><td>", $rs['milk'],
-        "</td><td>", $rs['sugar'], 
-        "</td><td>", $rs['flour'],
-        "</td><td>", $rs['time'],
-        "</td><td>", $rs['price'],
+        "</td><td>", $rs['milk'],"克",
+        "</td><td>", $rs['sugar'],"克" ,
+        "</td><td>", $rs['flour'],"克",
+        "</td><td>", $rs['time'],"秒",
+        "</td><td>$", $rs['price'],
         "</td><td>";
     }
 ?>
