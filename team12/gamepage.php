@@ -90,6 +90,14 @@ while($rb=mysqli_fetch_array($result)){
 	top:-16%;
     left:-10%;
 }
+#bottom12{
+    width:12%;
+	height:12%;
+	float:left;
+	position:relative;
+    bottom:-10px;
+    left:2%;
+}
 </style>
 <script  type="text/javascript">
 
@@ -153,9 +161,8 @@ $.ajax({
 	</head>
 	
 	<body  background="icon/1.jpg">
-    <audio src="makebread.wmv.mp3" autoplay="true" loop="true" 
-    hidden="true"></audio>
 
+    
 		<hr />
 		<table style="width:30%;height:10%; margin:0 auto; text-align: center;" border="1">
 		<tr>
@@ -213,7 +220,11 @@ $.ajax({
 	    <div id="mmiddle">
 			<script>showoven();</script>
 		</div>
-
+    </div>
+    
+    
+    <div id="bottom12">
+    <embed src="makebread.wmv.mp3" width="100" height="50" loop="true" autostart="true"> 
     </div>
 </body>
 </html>
