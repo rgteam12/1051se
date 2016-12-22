@@ -25,12 +25,17 @@ function oven($num,$d){
     while($row=mysqli_fetch_array($result)){
 	    $uoven=$row['uoven'];
     }
-    $uoven=$uoven+1;
+    
     $price = $num*$d;
     $sql="update user set oven=oven+$num, money=money-$price where id='1';";
     mysqli_query($conn,$sql);
-    $sql="insert into oven (uoven) value('$uoven');";
-    return mysqli_query($conn,$sql);
+    $tmp=$uoven;
+    $uoven=$uoven+$num;
+    for($i=$tmp+1;$i<=$uoven;$i++){
+        $sql="insert into oven (uoven) value('$i');";
+        mysqli_query($conn,$sql);
+    }
+    return true;
 }
 /*function checkfood($num,$c){
     global $conn;

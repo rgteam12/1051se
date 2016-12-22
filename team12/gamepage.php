@@ -149,10 +149,12 @@ $.ajax({
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>team8</title>
+	<title>team12</title>
 	</head>
 	
 	<body  background="icon/1.jpg">
+    <audio src="makebread.wmv.mp3" autoplay="true" loop="true" 
+    hidden="true"></audio>
 
 		<hr />
 		<table style="width:30%;height:10%; margin:0 auto; text-align: center;" border="1">
