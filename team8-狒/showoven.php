@@ -1,4 +1,7 @@
-﻿<head>
+﻿<html>
+</html>
+<head>
+
 <script   type="text/javascript">
 function startset(id,fint,status){
 var a=fint;
@@ -29,8 +32,6 @@ function clickfunction(ovenid,uoven){
 		document.getElementById(uoven.id).disabled=true;
 	}
 	else if(v=="完成囉"){
-		$("#div010").fadeIn("slow");
-		DIV="div011";
 		$.ajax({
 		url: 'ovenfindone.php',
 		datatype:'html',
@@ -67,9 +68,9 @@ function clickfunction(ovenid,uoven){
 </script>
 <style>
 #div010{
-	width:350px;
+	width:400px;
 	height:280px;
-	background-color: #ffd633;
+	background-color: #EEEE00;
 	position:absolute;
 	top:15%;left:35%;
 	display:none;
