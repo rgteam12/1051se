@@ -57,7 +57,7 @@ date_default_timezone_set('Asia/Taipei');
 	$newflour=$uflour - $fflour * $count;
 	//echo "玩家FOODPACKAGE:".$_SESSION['foodpackage']."新的FOODPACKAGE:".$newfoodpackage;
 
-	echo $fmilk . "<br>";
+	echo $newmilk . "<br>";
 	echo $newsugar . "<br>";
 	echo $newflour . "<br>";
 

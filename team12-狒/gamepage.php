@@ -1,10 +1,16 @@
 <?php
 require 'config.php';
 ?>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<marquee>
+<img src="icon/smile.jpg" width="20" height="20"> 
+今天又是美好的一天，歡迎光臨^.^</a>
+</marquee>
 <link rel="stylesheet"  href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="javascript" href="jquery-1.11.3.min.js">
+
 <script src="js/jquery.js" type="text/javascript">
 </script>
 
@@ -33,20 +39,20 @@ while($rb=mysqli_fetch_array($result)){
 
 <style type="text/css">
 #buttonone{
-	width:10%;
-	height:10%;
+	width:12%;
+	height:12%;
 	float:right;
 	position:relative;
-    top:-10%;
-    left:-10%;
+    bottom:70px;
+    left:-15%;
 }
 #buttontwo{
-	width:10%;
-	height:10%;
+	width:12%;
+	height:12%;
 	float:right;
 	position:relative;
-    top:-10%;
-    left:-10%;
+    bottom:40px;
+    left:-9%;
 }
 #middle{
 	width:100%;
@@ -76,13 +82,21 @@ while($rb=mysqli_fetch_array($result)){
 	opacity:0.95;
 	padding:0px;
 }
-#botton{
+#bottom{
 	width:30%;
 	height:10%;
     float:left;
 	position:relative;
-	top:-10%;
+	top:-16%;
     left:-10%;
+}
+#bottom12{
+    width:12%;
+	height:12%;
+	float:left;
+	position:relative;
+    bottom:-10px;
+    left:2%;
 }
 </style>
 <script  type="text/javascript">
@@ -143,24 +157,24 @@ $.ajax({
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>team8</title>
+	<title>team12</title>
 	</head>
 	
-	<body  background="icon/1.jpg" style="background-size:cover">
+	<body  background="icon/1.jpg">
 
+    
 		<hr />
 		<table style="width:30%;height:10%; margin:0 auto; text-align: center;" border="1">
 		<tr>
-			<td><img src="icon/milk1.png" style="height:50px">Milk</td> 
-            <td><img src="icon/sugar.png" style="height:50px">Sugar</td> 
-            <td><img src="icon/flour.png" style="height:50px">Flour</td> 
-			<td><img src="icon/oven.png" style="height:50px">Oven</td>
-            <td><img src="icon/money.png" style="height:50px">Money</td>
+			<td><img src='icon/milk.png' style="height:34%" ></td> 
+            <td><img src='icon/sugar.png' style="height:36%" ></td> 
+            <td><img src='icon/flour.png' style="height:64%" ></td> 
+			<td><img src='icon/oven1.png' style="height:30%" ></td>
+            <td><img src='icon/money1.png' style="height:30%" ></td>
 		</tr>
-        
 		<tr>
             <?php
-			echo "<td>{$_SESSION['milk']}</td>";
+			echo "<td>{$_SESSION['milk']}</td>";     
             echo "<td>{$_SESSION['sugar']}</td>";
             echo "<td>{$_SESSION['flour']}</td>";
             echo "<td>{$_SESSION['oven']}</td>";
@@ -170,16 +184,16 @@ $.ajax({
         </tr>
         </table>
         <div id="buttonone">
-               <a href="bom.php">材料表</a> </br>  
+               
                <a href="bom.php" 
 			<input type="submit" id="bom" value="材料表" onclick="bom()">
-			<img src="icon/bom.png" style="height:100%">
+			<img src="icon/bom.png" style="height:145%">
 			</a>
             </div>
             
                       
 			<div id="buttontwo">
-            <a href="shop.php">商店</a> </br> 
+           
             <a href="shop.php" 
 			<input type="submit" id="shop" value="商店" onclick="shop()">
 			<img src="icon/shop.png" style="height:100%">
@@ -194,21 +208,23 @@ $.ajax({
 		</div>
           
         
-    <div id="botton">
-        <a href="clickstat.php" 
-	    <input type="submit" id="bread" value="材料表" onclick="loadfood()">
-	    <img src="icon/bread.png" style="height:100%">
-		<input type="button" value="-肚子餓了嗎-" onclick="loadfood()"  style="font-size:30px; border-radius:180px 180px 20px 20px; background-color:#00DD00;">
+    <div id="bottom">
+            <a href="clickstat.php" 
+			<input type="submit" id="bread" value="材料表" onclick="loadfood()">
+			<img src="icon/h.png" style="height:100%">
+		<input type="button" value="-肚子餓了嗎-" onclick="loadfood()"  style="font-size:36px; border-radius:180px 180px 20px 20px;">
         </a>
 	</div>
          
          
 	    <div id="mmiddle">
-            
 			<script>showoven();</script>
-            <img src="icon/buttonoven.png" style="height:100%">
 		</div>
-
+    </div>
+    
+    
+    <div id="bottom12">
+    <embed src="makebread.wmv.mp3" width="100" height="50" loop="true" autostart="true"> 
     </div>
 </body>
 </html>
