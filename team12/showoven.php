@@ -110,7 +110,7 @@ while($row=mysqli_fetch_array($result)){
 	$uoven=$row['uoven'];
 	$status=$row['status'];
     
-	echo "<input type='button' id='oven".$uoven."' onclick='clickfunction(".$ovenid.",oven".$row['uoven'].")'style='height:250px;width:325px;font-size:24px ;position:relative;bottom:10%;margin:8% 8%;'>";
+	echo "<input type='button' id='oven".$uoven."' onclick='clickfunction(".$ovenid.",oven".$row['uoven'].")'style='height:240px;width:280px;font-size:24px ;position:relative;bottom:10%;margin:8% 8%;background-image:url(icon/oven2.png);'>";
 
 	echo "<script>startset(oven".$row['uoven'].",".$time.",".$status.");</script>";
 	}
